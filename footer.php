@@ -4,23 +4,27 @@
 <!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>If you wan't to contact me, feel free to.</p>
-							<form method="post" action="#">
+							<h2 class="major">Stopite v stik z nami</h2>
+							<p>To storite s pomočjo spodnje forme.</p>
+							<form method="post" action="text.php">
 								<div class="field">
-									<label for="name">Name</label>
+                                                                <label for="name">Ime</label>
 									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="surname">Priimek</label>
+									<input type="text" name="surname" id="surname" />
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
 									<input type="email" name="email" id="email" />
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
+									<label for="message">Sporočilo</label>
+                                                                        <textarea name="message" id="message" name="message" rows="4"></textarea>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Pošlji sporočilo" /></li>
 								</ul>
 							</form>
 							<ul class="contact">
@@ -36,7 +40,7 @@
 								<li class="fa-instagram"><a href="https://www.instagram.com/jure_zajc/" target="_blank">Follow me on Instagram</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Jure Zajc. All rights reserved.</li>
+								<li>&copy; 2ZaPles. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
@@ -51,6 +55,17 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
                         <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+                        <script type="text/javascript">function you_sure()
+                                    {
+                                      var retVal = confirm("Ali si prepričan da ga želiš narediti za skrbnika?");
+                                      if (retVal === true){
+                                          return true;
+                                      }
+                                      else{
+                                          return false;
+                                      }
+                                    }
+                                </script>
 
 	</body>
 </html>

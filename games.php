@@ -2,16 +2,17 @@
     include_once './header.php';
     include_once './database.php';
 ?>
-<h1 style="text-align: center">Games :D</h1>
+<h1 style="text-align: center">Plesi</h1>
 
-<a href="add_game.php" class="button" style="background-color: red">ADD GAME</a>
+<a href="add_game.php" class="button" style="background-color: red">Dodaj ples</a>
 
 <table>
     <tr>
-        <td>Title</td>
-        <td>Description</td>
-        <td>Edit info</td>
-        <td>Game scores!!</td>
+        <td>Naslov plesa</td>
+       
+        <td>Uredi ples</td>
+        <td>Ali plešeš ples?</td>
+        <td>Poglej ljudi kateri plešejo ples</td>
     </tr>
 <?php
     $query = "SELECT * FROM games";
@@ -19,15 +20,15 @@
     while ($game = mysqli_fetch_array($result)) {        
         echo '<tr>';
         echo '<td>'.$game['game_name'].'</td>';
-        echo '<td>'.$game['description'].'</td>';
+       // echo '<td>'.$game['description'].'</td>';
         echo '<td>';
-        echo '<a href="game_edit.php?id='.$game['ID_games'].'" >Edit game</a> ';
-        echo '</td>';
+        echo '<a href="game_edit.php?id='.$game['ID_games'].'" >Uredi ples</a> ';
+      //  echo '</td>';
         echo '<td>';
-        echo '<a href="game_score.php?id='.$game['ID_games'].'" >Add your score</a> ';
-        echo '<br>';
-        echo '<br>';
-        echo '<a href="scores.php?id='.$game['ID_games'].'"> See high scores </a>';
+        echo '<a href="game_score.php?id='.$game['ID_games'].'" >Ali plešeš ples?</a> ';
+         echo '</td>';
+         echo '<td>';
+        echo '<a href="scores.php?id='.$game['ID_games'].'"> Poglej kateri plešejo ples </a>';
         echo '</td>';
         echo '</tr>';
     }

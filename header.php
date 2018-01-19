@@ -9,7 +9,7 @@
 -->    
 <html>
             <head>
-                    <title>Gamers unite</title>
+                    <title>2 Za ples</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -25,28 +25,30 @@
                                             <header id="header" class="alt">
                                                 <h1><a href="index.php">Gamers unite</a></h1>
                                                     <nav>
-                                                            <a href="#menu">Menu</a>
+                                                            <a href="#menu">Meni</a>
                                                     </nav>
                                             </header>
 
                                     <!-- Menu -->
                                             <nav id="menu">
                                                     <div class="inner">
-                                                            <h2>Menu</h2>
+                                                            <h2>Meni</h2>
                                                             <?php
                                                                 if ($_SESSION) {
-                                                                    echo '<li><a href="index.php">Home</a></li>';
-                                                                    echo '<li><a href="games.php">Games!</a></li>';
-                                                                    echo '<li><a href ="add_game.php">Add your game here </a></li>';
-                                                                    echo '<li><a href ="edit_profile.php">Edit Profile </a></li>';
-                                                                    echo '<li><a href="./logout.php"> Logout </a></li>';
+                                                                    echo '<li><a href="index.php">Domov</a></li>';
+                                                                    echo '<li><a href="games.php">Plesi</a></li>';
+                                                                    
+                                                                    echo '<li><a href ="add_game.php">Dodaj nov ples </a></li>';
+                                                                    echo '<li><a href ="edit_profile.php">Uredi profil </a></li>';
+                                                                    echo '<li><a href ="make_admin.php">Dodaj skrbnika </a></li>';
+                                                                    echo '<li><a href="./logout.php"> Odjava</a></li>';
                                                                 }
                                                                 else {
-                                                                    echo '<li><a href="./login.php">Log In</a></li>';
-                                                                    echo '<li><a href="./add_user.php">Sign Up</a></li>';
+                                                                    echo '<li><a href="./login.php">Prijava</a></li>';
+                                                                    echo '<li><a href="./add_user.php">Registracija</a></li>';
                                                                 }
                                                                 ?>
-                                                            <a href="#" class="close">Close</a>
+                                                            <a href="#" class="close">Zapri</a>
                                                     </div>
                                             </nav>
 
@@ -54,8 +56,8 @@
                                             <section id="banner">
                                                     <div class="inner">
                                                         <div class="logo"><span class="icon fa-diamond"></span></div>
-                                                            <h2>Welcome to my website</h2>
-                                                            <p>Website was made for school, but I thought I could use it for personal use aswell.</p>
+                                                            <h2>Pozdravljeni na naši spletni strani</h2>
+                                                            <p>Na naši spletni strani lahko najdete novega plesnega partnerja</p>
                                                     </div>
                                             </section>
                             </div>

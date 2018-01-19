@@ -9,15 +9,15 @@
     $result = mysqli_query($link, $query);
     $game = mysqli_fetch_array($result);
 ?>
-<h1 style="text-align: center">Enter your highscore</h1>
+<h1 style="text-align: center">Ali plešeš ples?</h1>
 <form action="hs_update.php" method="post">
     <input type="hidden" name="id" value="<?php echo $ID_games;?>" />
-    <label>Title</label>
+    <label>Naslov plesa</label>
     <input type="text" name="game_name" value="<?php echo $game['game_name'];?>" required="required"  disabled="disabled" />
-    <label>High score</label>
+    <label>Če plešeš ples vpiši 1</label>
     <input type="text" name="high_score"placeholder="Enter high score" />
-    <input type="submit" name="submit" value="Submit" />
-    <input type="reset" name="reset" value="Cancel" />
+    <input type="submit" name="submit" value="Pošlji" />
+    <input type="reset" name="reset" value="Preklici" />
 </form>
 <?php
 include_once './footer.php';

@@ -5,6 +5,10 @@
         <form action="user_check.php" method="post">
             <label>Username</label>
             <input type="text" name="username" placeholder="Enter username" required="required" />
+            <label>Ime</label>
+            <input type="text" name="ime" placeholder="Vnesi ime" required="required" />
+            <label>Priimek</label>
+            <input type="text" name="priimek" placeholder="Vnesi priimek" required="required" />
             <label>Email</label>
             <input type="email" name="email" placeholder="Enter email" required="required" />
             <label>Password</label>

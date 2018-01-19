@@ -2,12 +2,12 @@
 include_once "./header.php";
 ?>
 
-<h1 style="text-align: center">Welcome to my page</h1>
+<h1 style="text-align: center">Pozdravljeni na strani kjer lahko najdete svojega plesnega partnerja</h1>
 
 <?php
     if ($_SESSION == NULL){
         echo "<div style=\"text-align:center\">";
-        echo "You can't do much if you are not registered or log inned. So please use link on sidemenu to register or log in.";
+        echo "Prosim če se prijavite";
     }
     else {
         echo "<div style=\"text-align:center\">";
