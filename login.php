@@ -3,16 +3,16 @@
 ?>
 
 
-<h1 style="text-align: center">Login</h1>
+<h1 style="text-align: center">Prijava</h1>
 
 <form action="login_check.php" method="post">
     <label>E-mail</label>
-    <input type="email" name="email" placeholder="Enter your email" 
+    <input type="email" name="email" placeholder="Vnesi svojo e-pošto" 
            required="required" />
-    <label>Password</label>
-    <input type="password" name="pass" placeholder="Enter your password" 
+    <label>Geslo</label>
+    <input type="password" name="pass" placeholder="Vnesi geslo" 
            required="required" />
-    <input type="submit" name="submit" value="Log-in" />
+    <input type="submit" name="submit" value="Prijava" />
 </form>
 
 
